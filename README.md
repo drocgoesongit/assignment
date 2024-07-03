@@ -1,16 +1,7 @@
-# assignment
+# Studio 137 
 
-A new Flutter project.
+### Application working video.
+The video recording glitched for 5 seconds 0:10 - 0:15.
 
-## Getting Started
+https://github.com/drocgoesongit/assignment/assets/82268112/3d30deb2-2db2-4449-9aeb-f8f982f034ba
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

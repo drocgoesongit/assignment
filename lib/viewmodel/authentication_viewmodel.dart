@@ -70,8 +70,22 @@ class AuthenticationViewmodel with ChangeNotifier {
     }
   }
 
-  Future<void> signOut() async {
-    await _auth.signOut();
+  Future<void> signOut(BuildContext context) async {
+    try {
+      showDialog(
+          context: context,
+          builder: ((context) => const Center(
+                child: CircularProgressIndicator(),
+              )));
+      await _auth.signOut();
+      Navigator.pop(context);
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => const LoginScreen()));
+      log("User logged out successfully");
+    } catch (e) {
+      Navigator.pop(context);
+      log("Error while logging out: ${e.toString()}");
+    }
   }
 
   bool _emailError = false;

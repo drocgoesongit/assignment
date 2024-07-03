@@ -45,6 +45,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(height: 100),
                 Image.asset(
                   'assets/images/logo.png',
                   height: 100,

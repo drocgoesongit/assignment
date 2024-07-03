@@ -1,6 +1,7 @@
 import 'package:assignment/constants/color_const.dart';
 import 'package:assignment/constants/text_const.dart';
 import 'package:assignment/screens/home_screen.dart';
+import 'package:assignment/screens/loading_screen.dart';
 import 'package:assignment/screens/login_screen.dart';
 import 'package:assignment/viewmodel/authentication_viewmodel.dart';
 import 'package:flutter/material.dart';
@@ -231,7 +232,8 @@ class _SignupPageState extends State<SignupPage> {
                                     Navigator.pushAndRemoveUntil(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => HomeScreen()),
+                                            builder: (context) =>
+                                                LoadingScreen()),
                                         (route) => false);
                                   } else {
                                     ScaffoldMessenger.of(context).showSnackBar(

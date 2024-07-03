@@ -33,5 +33,5 @@ BottomNavigationBarItem panicButtonDestinaton = const BottomNavigationBarItem(
     Icons.warning,
     color: Colors.red,
   ),
-  label: 'Panic Button',
+  label: 'Panic',
 );

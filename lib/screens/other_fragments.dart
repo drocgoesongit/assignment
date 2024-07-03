@@ -32,7 +32,7 @@ class PanicButtonScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Panic Button',
+          'Panic',
         ),
         automaticallyImplyLeading: false,
       ),

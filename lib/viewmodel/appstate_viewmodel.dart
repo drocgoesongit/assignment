@@ -33,6 +33,7 @@ class AppState extends ChangeNotifier {
 
   Future<void> requestLocationPermission() async {
     var status = await Permission.location.request();
+
     if (status.isPermanentlyDenied) {
       openAppSettings();
     }

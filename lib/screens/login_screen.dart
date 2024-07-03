@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'package:assignment/screens/loading_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:assignment/constants/color_const.dart';
@@ -156,7 +157,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => HomeScreen()));
+                                      builder: (context) => LoadingScreen()));
                             } else {
                               showDialog(
                                   context: context,
@@ -181,13 +182,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         style: ButtonStyle(
                           shape:
-                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                              WidgetStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15.46),
                             ),
                           ),
                           backgroundColor:
-                              MaterialStateProperty.all(primaryBlueCustomColor),
+                              WidgetStateProperty.all(primaryBlueCustomColor),
                         ),
                         child: model.authenticationLoading == true
                             ? const CircularProgressIndicator(
